@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>magic_cards</title>
+    <style>
+        *{
+    margin: 0%;
+    padding: 0%;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    background-color: blanchedalmond;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#b1{
+    z-index: 4;
+    transform: translate(-50%,-50%) rotate(-9);
+    background-color: aqua;
+}
+#b2{
+    z-index: 3;
+    rotate: -7deg;
+    background-color: blue;
+}
+#b3{
+    z-index: 2;
+    background-color: brown;
+    rotate: -14deg;
+}
+#b4{
+    z-index: 1;
+    background-color: cadetblue;
+    rotate: -21deg;
+}
+.card{
+    overflow: hidden;
+    position: absolute; 
+    height: 300px;
+    width: 200px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    border-color: black;
+    border: solid;
+}
+#b2:hover{
+    z-index: 10;
+}
+#b3:hover{
+    z-index: 10;
+}
+#b4:hover{
+    z-index: 10;
+}
+imag{
+    object-fit: cover;
+}
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="b1" class="card"><img width="100%" height="100%" src="https://images.pexels.com/photos/28226737/pexels-photo-28226737/free-photo-of-nevado-veronica.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""></div>
+        <div id="b2" class="card"><img width="100%" height="100%" src="https://images.pexels.com/photos/28128158/pexels-photo-28128158/free-photo-of-caminante.png?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></div>
+        <div id="b3" class="card"><img height="100%" width="100%" src="https://images.pexels.com/photos/28274660/pexels-photo-28274660/free-photo-of-empty-mesmerizing-road.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></div>
+        <div id="b4" class="card"><img height="100%" width="100%" src="https://images.pexels.com/photos/15360652/pexels-photo-15360652/free-photo-of-goose-in-river.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></div>
+    </div>
+</body>
+</html>
